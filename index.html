@@ -1,2 +1,447 @@
-[InternetShortcut]
-URL=file:///C:/Users/%D7%A9%D7%95%D7%A0%D7%99%D7%AA/finance-app/legal/index.html#privacy
+<!DOCTYPE html>
+<html lang="he">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>מדיניות פרטיות ותנאי שימוש / Privacy Policy &amp; Terms of Use</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #181c2e;
+    --dim: #6b7280;
+    --card: #f3f4f9;
+    --border: #e7e9f0;
+    --accent: #208aef;
+    --warn-bg: #fff7e6;
+    --warn-border: #e8b84b;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .topbar {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    z-index: 10;
+    flex-wrap: wrap;
+  }
+  .topbar .title { font-weight: 700; font-size: 15px; }
+  .lang-switch { display: flex; gap: 6px; }
+  .lang-switch button {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .lang-switch button.active {
+    background: var(--accent);
+    color: #fff;
+    border-color: var(--accent);
+  }
+  .doc-switch {
+    display: flex;
+    gap: 6px;
+    padding: 0 16px 12px;
+    flex-wrap: wrap;
+  }
+  .doc-switch a {
+    border: 1px solid var(--border);
+    background: var(--card);
+    color: var(--text);
+    border-radius: 8px;
+    padding: 6px 14px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 8px 20px 64px;
+  }
+  h1 { font-size: 22px; margin: 28px 0 4px; }
+  .updated { color: var(--dim); font-size: 12px; margin-bottom: 24px; }
+  h2 { font-size: 16px; margin: 28px 0 8px; }
+  p, li { font-size: 14px; color: var(--text); }
+  ul { padding-inline-start: 20px; }
+  .note {
+    background: var(--warn-bg);
+    border: 1px solid var(--warn-border);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14px;
+    margin: 16px 0;
+  }
+  .note strong { display: block; margin-bottom: 4px; }
+  .contact {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 14px 16px;
+    font-size: 14px;
+  }
+  footer {
+    text-align: center;
+    color: var(--dim);
+    font-size: 12px;
+    padding: 24px 0;
+  }
+  [dir="rtl"] ul { padding-inline-start: 20px; padding-inline-end: 0; }
+  .lang-block { display: none; }
+  .lang-block.active { display: block; }
+  .doc-block { display: none; }
+  .doc-block.active { display: block; }
+  code { background: var(--card); padding: 1px 5px; border-radius: 5px; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <span class="title" id="pageTitleHe">מדיניות פרטיות ותנאי שימוש</span>
+  <span class="title" id="pageTitleEn" style="display:none;">Privacy Policy &amp; Terms of Use</span>
+  <div class="lang-switch">
+    <button type="button" id="btnLangHe" class="active" onclick="setLang('he')">עברית</button>
+    <button type="button" id="btnLangEn" onclick="setLang('en')">English</button>
+  </div>
+</div>
+<div class="doc-switch">
+  <a href="#privacy" onclick="setDoc('privacy')">מדיניות פרטיות / Privacy Policy</a>
+  <a href="#terms" onclick="setDoc('terms')">תנאי שימוש / Terms of Use</a>
+</div>
+
+<main>
+
+<!-- ================= HEBREW ================= -->
+<div class="lang-block active" id="block-he" dir="rtl" lang="he">
+
+  <div class="doc-block active" id="he-privacy">
+    <h1>מדיניות פרטיות</h1>
+    <p class="updated">עדכון אחרון: 29 באוקטובר 2026</p>
+
+    <p>
+      מדיניות פרטיות זו מסבירה כיצד האפליקציה לניהול כספים אישי ("האפליקציה", "אנחנו")
+      אוספת, משתמשת ושומרת מידע עליך בעת השימוש באפליקציה.
+    </p>
+
+    <h2>איזה מידע נאסף</h2>
+    <ul>
+      <li><strong>פרטי זיהוי בסיסיים</strong> - כתובת אימייל, ובהתאם לשיטת ההתחברות שבחרת, שם ותמונת פרופיל כפי שסופקו על ידי Google או Apple.</li>
+      <li><strong>נתוני עסקאות פיננסיות</strong> שאתה מזין באופן יזום: הכנסות, הוצאות, קטגוריות, סכומים, תאריכים והערות חופשיות.</li>
+      <li><strong>נתוני תיק מניות</strong> שאתה מזין: ניירות ערך, כמויות, מחירי קנייה ומכירה, ותאריכים - לצורך הצגת שווי התיק והערכת רווח/הפסד.</li>
+      <li><strong>הגדרות ותקציב</strong> שאתה קובע באפליקציה (למשל יעדי חיסכון ותקציב חודשי לפי קטגוריה).</li>
+    </ul>
+    <p>האפליקציה אינה מתחברת לחשבון הבנק או כרטיס האשראי שלך, ואינה אוספת מידע פיננסי אוטומטית מצדדים שלישיים - כל הנתונים מוזנים ידנית על ידך.</p>
+
+    <h2>היכן נשמר המידע</h2>
+    <p>
+      הנתונים נשמרים באופן מקומי במכשיר שלך, ובמידה ובחרת להתחבר לחשבון, גם בשירותי העננים
+      של <strong>Google Firebase</strong> (כולל Firestore ו-Firebase Authentication), המופעלים
+      על תשתית Google Cloud. שמירה בענן מאפשרת סנכרון בין מכשירים וגיבוי של המידע שלך.
+    </p>
+
+    <h2>התחברות עם Google ו-Apple</h2>
+    <p>
+      האפליקציה מאפשרת התחברות באמצעות <strong>Google Sign-In</strong> ו-<strong>Apple Sign-In</strong>.
+      כאשר אתה מתחבר באמצעות אחת מהשיטות הללו, אנו מקבלים ממך את כתובת האימייל ושם
+      המשתמש (ולעיתים תמונת פרופיל) לצורך יצירת וזיהוי החשבון שלך באפליקציה בלבד. אנו
+      איננו מקבלים גישה לסיסמה שלך או לחשבון Google/Apple שלך מעבר לכך.
+    </p>
+
+    <h2>כיצד אנו משתמשים במידע</h2>
+    <ul>
+      <li>הצגת הנתונים שהזנת בחזרה אליך (דשבורד, היסטוריה, דוחות, תקציב, תיק מניות).</li>
+      <li>סנכרון הנתונים שלך בין המכשירים שלך, אם בחרת להתחבר לחשבון.</li>
+      <li>חישובים והערכות בתוך האפליקציה (לדוגמה הערכת מס רווחי הון, מעקב תקציב) - ראו הבהרה חשובה בתנאי השימוש.</li>
+      <li>שיפור האפליקציה ותחזוקה שוטפת.</li>
+    </ul>
+
+    <h2>אין מכירה או שיתוף של מידע</h2>
+    <p>
+      אנו <strong>לא מוכרים</strong> ולא משכירים את המידע האישי או הפיננסי שלך לצד שלישי
+      כלשהו. המידע שלך משותף רק עם ספקי התשתית הטכנולוגית הנחוצים להפעלת האפליקציה
+      (כגון Google Firebase), ורק לצורך הפעלת השירות עצמו.
+    </p>
+
+    <h2>מחיקת חשבון ונתונים</h2>
+    <p>
+      באפשרותך לבקש בכל עת מחיקה מלאה של חשבונך וכל הנתונים הפיננסיים השמורים עבורך
+      בענן, על ידי פנייה אלינו בפרטי הקשר המופיעים בהמשך עמוד זה. הבקשה תטופל בתוך זמן
+      סביר, ולאחריה לא ניתן לשחזר את המידע שנמחק.
+    </p>
+
+    <h2>אבטחת מידע</h2>
+    <p>
+      אנו נוקטים באמצעי אבטחה סבירים ומקובלים כדי להגן על המידע שלך, לרבות שימוש
+      בתשתית Firebase המאובטחת של Google. עם זאת, אין אפשרות להבטיח אבטחה מוחלטת
+      בהעברה או באגירה של מידע באינטרנט.
+    </p>
+
+    <h2>פרטיות קטינים</h2>
+    <p>האפליקציה אינה מיועדת לשימוש על ידי קטינים מתחת לגיל 16, ואיננו אוספים במכוון מידע מקטינים.</p>
+
+    <h2>שינויים במדיניות זו</h2>
+    <p>אנו עשויים לעדכן מדיניות זו מעת לעת. שינויים מהותיים יצוינו בעמוד זה עם תאריך עדכון חדש.</p>
+
+    <h2>יצירת קשר</h2>
+    <div class="contact">
+      <p style="margin:0;"><strong>יהונתן קרמש</strong><br/>
+      דוא"ל ליצירת קשר: <strong>jonjonkramash@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <div class="doc-block" id="he-terms">
+    <h1>תנאי שימוש</h1>
+    <p class="updated">עדכון אחרון: 29 באוקטובר 2026</p>
+
+    <p>בהורדה ובשימוש באפליקציה, אתה מסכים לתנאי השימוש המפורטים להלן. אם אינך מסכים לתנאים אלה, אין להשתמש באפליקציה.</p>
+
+    <h2>תיאור השירות</h2>
+    <p>
+      האפליקציה הינה <strong>כלי אישי למעקב, ריכוז והערכה</strong> של הכנסות, הוצאות, תקציב
+      ותיק מניות. היא מציגה הערכות וחישובים (למשל הערכת מס רווחי הון על מכירת ניירות
+      ערך, ומעקב תקציב לפי קטגוריות) המבוססים על הנתונים שאתה מזין בעצמך.
+    </p>
+
+    <div class="note">
+      <strong>לא ייעוץ פיננסי, השקעות או מס</strong>
+      האפליקציה ותוכן זה אינם מהווים ייעוץ פיננסי, ייעוץ השקעות, ייעוץ מס, או כל ייעוץ
+      מקצועי אחר. כל הערכה המוצגת באפליקציה (כגון הערכת מס רווחי הון או תקציב מוצע)
+      היא הערכה כללית בלבד המבוססת על הנתונים שהוזנו, ואינה מהווה תחליף לייעוץ
+      מרואה חשבון, יועץ מס, או יועץ פיננסי מוסמך. ההחלטות הפיננסיות וההשקעתיות שלך הן
+      באחריותך הבלעדית.
+    </div>
+
+    <h2>אחריות המשתמש</h2>
+    <ul>
+      <li>האחריות לדיוק ולנכונות הנתונים המוזנים לאפליקציה (סכומים, תאריכים, קטגוריות) היא עליך בלבד.</li>
+      <li>עליך להשתמש באפליקציה למטרות אישיות וחיוניות בלבד, ובהתאם לכל דין.</li>
+    </ul>
+
+    <h2>חשבון, התחברות ומחיקת נתונים</h2>
+    <p>
+      ניתן להשתמש באפליקציה ללא חשבון (אחסון מקומי בלבד), או להתחבר באמצעות Google
+      או Apple לצורך סנכרון ושמירת גיבוי בענן. ניתן לבקש מחיקת חשבון ונתונים בכל עת,
+      כמפורט במדיניות הפרטיות.
+    </p>
+
+    <h2>קניין רוחני</h2>
+    <p>כל זכויות הקניין הרוחני באפליקציה, בעיצובה ובקוד שלה שייכות ליוצר האפליקציה. השימוש באפליקציה אינו מעניק לך זכויות בעלות כלשהן בה.</p>
+
+    <h2>הגבלת אחריות</h2>
+    <p>
+      האפליקציה מסופקת <strong>"AS IS"</strong> (כמות שהיא), ללא כל אחריות מכל סוג. איננו
+      אחראים לכל נזק, ישיר או עקיף, הנובע משימוש באפליקציה, מהסתמכות על ההערכות
+      המוצגות בה, או מאובדן נתונים.
+    </p>
+
+    <h2>שינויים בשירות ובתנאים</h2>
+    <p>אנו עשויים לעדכן את האפליקציה ואת תנאי השימוש מעת לעת. המשך השימוש באפליקציה לאחר עדכון מהווה הסכמה לתנאים המעודכנים.</p>
+
+    <h2>יצירת קשר</h2>
+    <div class="contact">
+      <p style="margin:0;"><strong>יהונתן קרמש</strong><br/>
+      דוא"ל ליצירת קשר: <strong>jonjonkramash@gmail.com</strong></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ================= ENGLISH ================= -->
+<div class="lang-block" id="block-en" dir="ltr" lang="en">
+
+  <div class="doc-block active" id="en-privacy">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 29 October 2026</p>
+
+    <p>
+      This Privacy Policy explains how this personal finance app ("the App", "we")
+      collects, uses, and stores information about you when you use the App.
+    </p>
+
+    <h2>Information We Collect</h2>
+    <ul>
+      <li><strong>Basic identification details</strong> - your email address, and depending on your chosen sign-in method, your name and profile picture as provided by Google or Apple.</li>
+      <li><strong>Financial transaction data</strong> you actively enter: income, expenses, categories, amounts, dates, and free-text notes.</li>
+      <li><strong>Investment portfolio data</strong> you enter: securities, quantities, purchase and sale prices, and dates - used to display portfolio value and estimate gain/loss.</li>
+      <li><strong>Settings and budget</strong> you configure in the App (e.g. savings goals and a monthly budget by category).</li>
+    </ul>
+    <p>The App does not connect to your bank account or credit card, and does not automatically collect financial data from any third party - all data is entered manually by you.</p>
+
+    <h2>Where Data Is Stored</h2>
+    <p>
+      Data is stored locally on your device, and if you choose to sign in, also in
+      <strong>Google Firebase</strong> cloud services (including Firestore and Firebase
+      Authentication), running on Google Cloud infrastructure. Cloud storage enables
+      syncing across your devices and backing up your data.
+    </p>
+
+    <h2>Google and Apple Sign-In</h2>
+    <p>
+      The App supports signing in with <strong>Google Sign-In</strong> and
+      <strong>Apple Sign-In</strong>. When you sign in using either method, we receive
+      your email address and name (and sometimes a profile picture) solely to create
+      and identify your account within the App. We do not receive your password or
+      any further access to your Google/Apple account beyond this.
+    </p>
+
+    <h2>How We Use Your Information</h2>
+    <ul>
+      <li>Displaying the data you entered back to you (dashboard, history, reports, budget, portfolio).</li>
+      <li>Syncing your data across your devices, if you chose to sign in.</li>
+      <li>In-app calculations and estimates (e.g. capital-gains tax estimates, budget tracking) - see the important clarification in the Terms of Use.</li>
+      <li>Improving and maintaining the App.</li>
+    </ul>
+
+    <h2>No Selling or Sharing of Data</h2>
+    <p>
+      We <strong>do not sell</strong> and do not rent your personal or financial
+      information to any third party. Your information is only shared with the
+      technical infrastructure providers necessary to run the App (such as Google
+      Firebase), and solely to operate the service itself.
+    </p>
+
+    <h2>Account and Data Deletion</h2>
+    <p>
+      You may request full deletion of your account and all financial data stored for
+      you in the cloud at any time, by contacting us using the details below. Requests
+      will be handled within a reasonable time, after which the deleted data cannot be
+      recovered.
+    </p>
+
+    <h2>Data Security</h2>
+    <p>
+      We take reasonable and generally accepted security measures to protect your
+      data, including using Google's secure Firebase infrastructure. However, no
+      method of transmission or storage over the internet can be guaranteed to be
+      100% secure.
+    </p>
+
+    <h2>Children's Privacy</h2>
+    <p>The App is not intended for use by children under the age of 16, and we do not knowingly collect information from children.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Material changes will be reflected on this page with a new "last updated" date.</p>
+
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p style="margin:0;"><strong>Jonathan Kramash</strong><br/>
+      Contact email: <strong>jonjonkramash@gmail.com</strong></p>
+    </div>
+  </div>
+
+  <div class="doc-block" id="en-terms">
+    <h1>Terms of Use</h1>
+    <p class="updated">Last updated: 29 October 2026</p>
+
+    <p>By downloading or using the App, you agree to the Terms of Use set out below. If you do not agree to these terms, do not use the App.</p>
+
+    <h2>Description of the Service</h2>
+    <p>
+      The App is a <strong>personal tool for tracking, aggregating, and estimating</strong>
+      income, expenses, budget, and an investment portfolio. It presents estimates and
+      calculations (e.g. estimated capital-gains tax on security sales, and
+      category-based budget tracking) based solely on the data you enter.
+    </p>
+
+    <div class="note">
+      <strong>Not Financial, Investment, or Tax Advice</strong>
+      The App and its content do not constitute financial advice, investment advice,
+      tax advice, or any other professional advice. Any estimate shown in the App
+      (such as an estimated capital-gains tax figure or a suggested budget) is a
+      general estimate based only on the data entered, and is not a substitute for
+      advice from a licensed accountant, tax advisor, or financial advisor. Your
+      financial and investment decisions remain your sole responsibility.
+    </div>
+
+    <h2>User Responsibility</h2>
+    <ul>
+      <li>You are solely responsible for the accuracy and correctness of the data you enter into the App (amounts, dates, categories).</li>
+      <li>You agree to use the App only for personal, lawful purposes.</li>
+    </ul>
+
+    <h2>Account, Sign-In, and Data Deletion</h2>
+    <p>
+      The App can be used without an account (local storage only), or with Google or
+      Apple sign-in for cloud sync and backup. You may request deletion of your
+      account and data at any time, as described in the Privacy Policy.
+    </p>
+
+    <h2>Intellectual Property</h2>
+    <p>All intellectual property rights in the App, its design, and its code belong to the App's creator. Using the App does not grant you any ownership rights in it.</p>
+
+    <h2>Limitation of Liability</h2>
+    <p>
+      The App is provided <strong>"AS IS"</strong>, without warranties of any kind. We
+      are not liable for any direct or indirect damages arising from use of the App,
+      reliance on the estimates it presents, or loss of data.
+    </p>
+
+    <h2>Changes to the Service and Terms</h2>
+    <p>We may update the App and these Terms of Use from time to time. Continued use of the App after an update constitutes acceptance of the updated terms.</p>
+
+    <h2>Contact Us</h2>
+    <div class="contact">
+      <p style="margin:0;"><strong>Jonathan Kramash</strong><br/>
+      Contact email: <strong>jonjonkramash@gmail.com</strong></p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  מדיניות פרטיות ותנאי שימוש זו מיועדת לאפליקציית ניהול כספים אישי.
+  <br/>This Privacy Policy and Terms of Use apply to a personal finance management app.
+</footer>
+
+</main>
+
+<script>
+  function setLang(lang) {
+    document.getElementById('block-he').classList.toggle('active', lang === 'he');
+    document.getElementById('block-en').classList.toggle('active', lang === 'en');
+    document.getElementById('btnLangHe').classList.toggle('active', lang === 'he');
+    document.getElementById('btnLangEn').classList.toggle('active', lang === 'en');
+    document.getElementById('pageTitleHe').style.display = lang === 'he' ? '' : 'none';
+    document.getElementById('pageTitleEn').style.display = lang === 'en' ? '' : 'none';
+    try { localStorage.setItem('legalPageLang', lang); } catch (e) {}
+  }
+
+  function setDoc(doc) {
+    ['he-privacy', 'he-terms', 'en-privacy', 'en-terms'].forEach(function (id) {
+      var el = document.getElementById(id);
+      if (!el) return;
+      var isMatch = id.endsWith(doc);
+      el.classList.toggle('active', isMatch);
+    });
+    try { localStorage.setItem('legalPageDoc', doc); } catch (e) {}
+  }
+
+  (function init() {
+    var doc = 'privacy';
+    var lang = 'he';
+    try {
+      if (location.hash === '#terms') doc = 'terms';
+      var savedLang = localStorage.getItem('legalPageLang');
+      if (savedLang === 'he' || savedLang === 'en') lang = savedLang;
+    } catch (e) {}
+    setDoc(doc);
+    setLang(lang);
+  })();
+</script>
+
+</body>
+</html>
